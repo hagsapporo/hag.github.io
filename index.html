@@ -3,92 +3,126 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#7cc5e8" />
-    <meta name="description" content="Hokkaido AI GameDev（HAG）は、北海道でAIとゲーム制作に挑戦する人が、作りながら仲間と出会うコミュニティです。" />
+    <meta name="theme-color" content="#101419" />
+    <meta name="description" content="Hokkaido AI GameDev（HAG）は、北海道でAIとゲーム制作に挑戦する人が、作りながら仲間と出会うクリエイティブラボです。" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="HAG | Hokkaido AI GameDev" />
-    <meta property="og:description" content="北海道で、AIとゲーム制作に挑戦する。作りながら、次の仲間と出会う。" />
+    <meta property="og:description" content="北海道から、まだない遊びを実装する。札幌のAIゲーム制作コミュニティ。" />
     <meta property="og:image" content="https://hagsapporo.github.io/assets/hag-hero-image2.png" />
     <meta property="og:url" content="https://hagsapporo.github.io/" />
     <meta name="twitter:card" content="summary_large_image" />
     <link rel="canonical" href="https://hagsapporo.github.io/" />
     <title>HAG | Hokkaido AI GameDev</title>
     <link rel="icon" href="assets/hag-visual.png" type="image/png" />
-    <link rel="stylesheet" href="styles.css?v=20260802-4" />
+    <link rel="stylesheet" href="styles.css?v=20260802-5" />
+    <script src="home.js?v=20260802-1" defer></script>
   </head>
-  <body>
+  <body class="lab-home">
     <a class="skip-link" href="#main">本文へ移動</a>
 
-    <header class="site-header community-header">
-      <a class="wordmark" href="/" aria-label="HAG home">
+    <header class="lab-header">
+      <a class="lab-brand" href="/" aria-label="HAG home">
         <strong>HAG</strong>
-        <span>Hokkaido AI GameDev</span>
+        <span>HOKKAIDO AI GAMEDEV</span>
       </a>
-      <nav class="main-nav" aria-label="メインナビゲーション">
-        <a href="#about">HAGとは</a>
-        <a href="#events">イベント</a>
-        <a href="mailto:kociden28@gmail.com">お問い合わせ</a>
+      <div class="lab-header-status" aria-label="ラボ稼働状況">
+        <i></i><span>LAB ONLINE</span><time id="lab-clock">JST --:--</time>
+      </div>
+      <nav class="lab-nav" aria-label="メインナビゲーション">
+        <a href="#mission">MISSION</a>
+        <a href="#project-00">PROJECTS</a>
+        <a href="mailto:kociden28@gmail.com">CONTACT</a>
       </nav>
-      <a class="header-cta" href="https://hagsapporo.connpass.com/event/402481/" target="_blank" rel="noopener noreferrer">参加申込</a>
+      <a class="lab-entry-link" href="https://hagsapporo.connpass.com/event/402481/" target="_blank" rel="noopener noreferrer">
+        <span>ENTRY</span><b aria-hidden="true">↗</b>
+      </a>
     </header>
 
     <main id="main">
-      <section class="community-hero">
-        <div class="community-copy">
-          <p class="community-kicker">HOKKAIDO AI GAMEDEV / SAPPORO</p>
-          <h1><span>作ろう。</span><span>北海道から。</span></h1>
-          <p>AIとゲーム制作に挑戦する人が、作品を作りながら次の仲間と出会うコミュニティ。</p>
-          <div class="community-actions">
-            <a class="primary" href="gamejam/0/">GameJam #0を見る</a>
-            <a class="secondary" href="https://hagsapporo.connpass.com/event/402481/" target="_blank" rel="noopener noreferrer">connpassで無料参加</a>
+      <section class="lab-hero" aria-labelledby="lab-title">
+        <div class="lab-hero-image" aria-hidden="true"></div>
+        <div class="lab-hero-grid" aria-hidden="true"></div>
+        <div class="lab-hero-copy">
+          <p class="lab-index"><span>CREATIVE LAB / SAPPORO</span><span>43.0618° N</span></p>
+          <h1 id="lab-title"><span>HOKKAIDO</span><span>AI GAMEDEV</span></h1>
+          <p class="lab-statement">北海道から、<br />まだない遊びを実装する。</p>
+          <div class="lab-hero-actions">
+            <a class="lab-button lab-button-hot" href="https://hagsapporo.connpass.com/event/402481/" target="_blank" rel="noopener noreferrer">GAMEJAM #0 に参加 <span>↗</span></a>
+            <a class="lab-button" href="gamejam/0/">実験概要を見る <span>→</span></a>
           </div>
         </div>
-        <figure>
-          <img src="assets/hag-hero-image2.png" alt="AIとゲーム制作を表現したHAGのビジュアル" />
-        </figure>
+        <div class="lab-readout" aria-label="現在のプロジェクト情報">
+          <div><span>ACTIVE PROJECT</span><strong>01</strong></div>
+          <div><span>NEXT RUN</span><strong>2026.09.19</strong></div>
+          <div><span>LOCATION</span><strong>SAPPORO</strong></div>
+          <div><span>STATUS</span><strong class="lab-live"><i></i>ENTRY OPEN</strong></div>
+        </div>
+        <p class="lab-scroll">SCROLL TO INSPECT <span>↓</span></p>
       </section>
 
-      <section class="community-section" id="about">
-        <div class="section-label"><span>01</span><p>ABOUT HAG</p></div>
-        <div class="community-section-head">
-          <h2>ゲームを作る。<br />仲間と出会う。<br />次も作る。</h2>
-          <p>HAGは、イベントだけで終わらない制作コミュニティです。初心者も経験者も、まず小さく完成させ、遊び、フィードバックし合うところから始めます。</p>
+      <section class="lab-mission lab-section" id="mission">
+        <header class="lab-section-header lab-reveal">
+          <p><span>01</span> MISSION</p>
+          <span>WHY WE EXIST</span>
+        </header>
+        <div class="lab-mission-layout">
+          <h2 class="lab-reveal">ゲームを作る。<br />仲間と出会う。<br /><em>次も作る。</em></h2>
+          <div class="lab-mission-note lab-reveal">
+            <p class="lab-note-id">FIELD NOTE / 001</p>
+            <p>HAGは、AIとゲーム制作を軸に、北海道の作り手が実験を始めるためのラボです。イベントで出会い、小さく完成させ、遊んで確かめ、次の制作へつなげます。</p>
+            <dl>
+              <div><dt>METHOD</dt><dd>BUILD → PLAY → ITERATE</dd></div>
+              <div><dt>BASE</dt><dd>SAPPORO, HOKKAIDO</dd></div>
+              <div><dt>ACCESS</dt><dd>BEGINNER FRIENDLY</dd></div>
+            </dl>
+          </div>
         </div>
-        <div class="community-principles">
-          <article><b>01 / BUILD</b><h3>まず形にする</h3><p>AIを制作パートナーに、アイデアを遊べるゲームへ変える。</p></article>
-          <article><b>02 / PLAY</b><h3>遊んで確かめる</h3><p>見せて、触ってもらい、ゲーム性の核を研ぎ澄ませる。</p></article>
-          <article><b>03 / CONNECT</b><h3>次の仲間と会う</h3><p>企画、開発、デザインなど、次も一緒に作る人とつながる。</p></article>
-        </div>
+        <ol class="lab-protocol lab-reveal">
+          <li><span>01 / BUILD</span><strong>まず、動かす。</strong><p>AIを制作パートナーに、アイデアを最小の遊べる形へ。</p></li>
+          <li><span>02 / TEST</span><strong>遊んで、測る。</strong><p>作品を触ってもらい、ゲーム性の核を確かめる。</p></li>
+          <li><span>03 / CONNECT</span><strong>次を、共に作る。</strong><p>企画・開発・デザインを越えて、次の仲間と出会う。</p></li>
+        </ol>
       </section>
 
-      <section class="community-section" id="events">
-        <div class="section-label"><span>02</span><p>CURRENT EVENT</p></div>
-        <div class="event-feature">
-          <img src="assets/hag-flyer.png" alt="Hokkaido AI GameJam #0 フライヤー" />
-          <div class="event-feature-copy">
-            <p class="eyebrow">2026.9.19 / SAPPORO</p>
-            <h3>Hokkaido AI<br />GameJam #0</h3>
-            <div class="event-meta">
-              <span>北海道大学</span><span>参加無料</span><span>初心者歓迎</span><span>チーム制作</span>
+      <section class="lab-project lab-section" id="project-00">
+        <header class="lab-section-header lab-reveal">
+          <p><span>02</span> ACTIVE PROJECT</p>
+          <span>EXPERIMENT 00 / RECRUITING</span>
+        </header>
+        <div class="lab-project-layout">
+          <div class="lab-project-visual lab-reveal">
+            <img src="assets/hag-hero-image2.png" alt="指を鳴らすとゲームが生まれるHAGのキービジュアル" />
+            <span class="lab-stamp">ENTRY<br />OPEN</span>
+          </div>
+          <div class="lab-project-copy lab-reveal">
+            <p class="lab-note-id">PROJECT ID / HAG-GJ-000</p>
+            <h2>Hokkaido AI<br />GameJam <em>#0</em></h2>
+            <p class="lab-project-lead">AIで、アイデアを形にしよう。</p>
+            <div class="lab-specs">
+              <div><span>DATE</span><strong>2026.09.19 SAT</strong></div>
+              <div><span>VENUE</span><strong>北海道大学 エンレイソウ1F</strong></div>
+              <div><span>FORMAT</span><strong>1DAY / TEAM BUILD</strong></div>
+              <div><span>FEE</span><strong>FREE</strong></div>
             </div>
-            <p>AIを使って、1日でゲームのMVPを作る。企画から制作、発表、試遊までを仲間と走り切る札幌開催のイベントです。</p>
-            <div class="community-actions">
-              <a class="primary" href="gamejam/0/">イベント詳細</a>
-              <a class="secondary" href="https://hagsapporo.connpass.com/event/402481/" target="_blank" rel="noopener noreferrer">connpassで申し込む</a>
+            <p>経験ゼロから、遊べるゲームの核まで。AIを使い、当日出会った仲間とチームでゲームのMVPを作ります。</p>
+            <div class="lab-hero-actions">
+              <a class="lab-button lab-button-hot" href="https://hagsapporo.connpass.com/event/402481/" target="_blank" rel="noopener noreferrer">connpassで無料参加 <span>↗</span></a>
+              <a class="lab-button" href="gamejam/0/">イベント詳細 <span>→</span></a>
             </div>
           </div>
         </div>
+      </section>
+
+      <section class="lab-callout">
+        <p>NOW RECRUITING / GAMEJAM #0</p>
+        <h2>最初の実験に、<br />参加しよう。</h2>
+        <a href="https://hagsapporo.connpass.com/event/402481/" target="_blank" rel="noopener noreferrer">ENTRY VIA CONNPASS <span>↗</span></a>
       </section>
     </main>
 
-    <aside class="registration-band" aria-label="参加申込">
-      <div><strong>GameJam #0 参加受付中</strong><span>2026年9月19日・札幌・参加無料</span></div>
-      <a href="https://hagsapporo.connpass.com/event/402481/" target="_blank" rel="noopener noreferrer">connpassで申し込む</a>
-    </aside>
-
-    <footer>
-      <div><strong>HAG</strong><span>Hokkaido AI GameDev</span></div>
-      <p>北海道で、AIとゲーム制作に挑戦する。</p>
+    <footer class="lab-footer">
+      <div><strong>HAG</strong><span>HOKKAIDO AI GAMEDEV</span></div>
+      <p>CREATIVE LAB FOR GAMES + AI<br />SAPPORO, HOKKAIDO</p>
       <a href="mailto:kociden28@gmail.com">kociden28@gmail.com</a>
       <small>© 2026 HAG</small>
     </footer>
