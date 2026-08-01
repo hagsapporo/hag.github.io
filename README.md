@@ -4,4 +4,6 @@ Official website for HAG, a game development community in Hokkaido using AI.
 
 ## Website
 
-https://hagsapporo.github.io/
+Community home: https://hagsapporo.github.io/
+
+Hokkaido AI GameJam #0: https://hagsapporo.github.io/gamejam/0/
