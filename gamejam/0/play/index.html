@@ -1,0 +1,362 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0c0e10" />
+    <meta
+      name="description"
+      content="そのアイデア、今日中に遊べる。AIとチームでゲームのMVPをつくる、札幌の1dayゲームジャム。2026年9月19日、北海道大学エンレイソウ1Fで開催予定。"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="HAG #0 | そのアイデア、今日中に遊べる。" />
+    <meta
+      property="og:description"
+      content="AIとチームで、面白さの核だけを実装する。2026.9.19 札幌・北海道大学。参加無料。北海道大学との共催を予定。"
+    />
+    <meta
+      property="og:image"
+      content="https://hagsapporo.github.io/gamejam/0/play/hag-gamejam-0-play-flyer.png"
+    />
+    <meta property="og:url" content="https://hagsapporo.github.io/gamejam/0/play/" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="canonical" href="https://hagsapporo.github.io/gamejam/0/play/" />
+    <link rel="icon" href="../../../assets/hag-visual.png" type="image/png" />
+    <title>HAG #0 | そのアイデア、今日中に遊べる。</title>
+    <link rel="stylesheet" href="./styles.css?v=20260805-1" />
+    <script src="./app.js?v=20260805-1" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main" data-i18n="skip">本文へ移動</a>
+
+    <header class="site-header" data-header>
+      <a class="brand" href="/" aria-label="HAG community home">
+        <strong>HAG</strong>
+        <span>HOKKAIDO AI GAMEDEV</span>
+      </a>
+      <nav class="desktop-nav" aria-label="Main navigation">
+        <a href="#mission" data-i18n="navMission">MISSION</a>
+        <a href="#flow" data-i18n="navFlow">GAME FLOW</a>
+        <a href="#guide" data-i18n="navGuide">PLAYER GUIDE</a>
+        <a href="./flyer.html" target="_blank" rel="noopener" data-i18n="navFlyer">FLYER</a>
+      </nav>
+      <div class="header-actions">
+        <div class="language-switch" role="group" aria-label="Language">
+          <button type="button" data-language="ja" aria-pressed="true">JA</button>
+          <button type="button" data-language="en" aria-pressed="false">EN</button>
+        </div>
+        <a
+          class="header-entry"
+          href="https://hagsapporo.connpass.com/event/402481/"
+          target="_blank"
+          rel="noopener noreferrer"
+          data-i18n="headerEntry"
+        >
+          ENTRY
+        </a>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero" aria-labelledby="hero-title">
+        <img
+          class="hero-art"
+          src="../../../assets/hag-hero-image2.png"
+          alt=""
+          aria-hidden="true"
+        />
+        <div class="hero-stage">
+          <div class="hero-copy reveal is-visible">
+            <div class="hero-flags">
+              <span>HOKKAIDO AI GAMEJAM #0</span>
+              <span class="hero-location" data-i18n="sapporoFlag">SAPPORO / 札幌開催</span>
+            </div>
+            <p class="collab-badge">
+              <span class="status-light" aria-hidden="true"></span>
+              <span data-i18n="collabBadge">北海道大学との共催を予定</span>
+            </p>
+            <h1 id="hero-title">
+              <span class="hero-title-ja">
+                <span>そのアイデア、</span>
+                <span>今日中に遊べる。</span>
+              </span>
+              <span class="hero-title-en">MAKE IT.<br />PLAY IT.<br />TODAY.</span>
+            </h1>
+            <p class="hero-lead" data-i18n="heroLead">
+              AIとチームで、面白さの核だけを実装する。企画から制作、発表、試遊までを1日で駆け抜ける札幌のゲームジャム。
+            </p>
+            <div class="hero-actions">
+              <a
+                class="primary-command"
+                href="https://hagsapporo.connpass.com/event/402481/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span data-i18n="mainEntry">無料で参加する</span>
+                <b aria-hidden="true">→</b>
+              </a>
+              <a class="text-command" href="#mission" data-i18n="seeRules">ルールを見る ↓</a>
+            </div>
+          </div>
+
+          <dl class="hero-data reveal is-visible">
+            <div>
+              <dt>DATE</dt>
+              <dd>2026.09.19 <small>SAT</small></dd>
+            </div>
+            <div>
+              <dt>VENUE</dt>
+              <dd data-i18n="venueValue">北海道大学 エンレイソウ1F</dd>
+            </div>
+            <div>
+              <dt>ENTRY</dt>
+              <dd data-i18n="entryValue">参加無料</dd>
+            </div>
+            <div>
+              <dt>PARTY</dt>
+              <dd data-i18n="partyValue">2〜4人チーム</dd>
+            </div>
+          </dl>
+        </div>
+      </section>
+
+      <section class="countdown-band" aria-label="Event countdown">
+        <div class="countdown-title">
+          <span class="status-light dark" aria-hidden="true"></span>
+          <strong data-i18n="countdownTitle">GAME STARTまで</strong>
+        </div>
+        <div class="countdown" data-countdown>
+          <div><b data-days>00</b><span data-i18n="days">DAYS</span></div>
+          <i>:</i>
+          <div><b data-hours>00</b><span data-i18n="hours">HRS</span></div>
+          <i>:</i>
+          <div><b data-minutes>00</b><span data-i18n="minutes">MIN</span></div>
+          <i>:</i>
+          <div><b data-seconds>00</b><span data-i18n="seconds">SEC</span></div>
+        </div>
+      </section>
+
+      <div class="play-loop" aria-hidden="true">
+        <div>
+          <span>FORM A PARTY</span><b>+</b><span>FIND THE FUN</span><b>+</b><span>SHIP A BUILD</span><b>+</b><span>LET PEOPLE PLAY</span><b>+</b>
+          <span>FORM A PARTY</span><b>+</b><span>FIND THE FUN</span><b>+</b><span>SHIP A BUILD</span><b>+</b><span>LET PEOPLE PLAY</span><b>+</b>
+        </div>
+      </div>
+
+      <section class="core-section" id="mission">
+        <div class="section-shell">
+          <div class="section-heading reveal">
+            <p class="section-code">MISSION 00 / BUILD THE CORE</p>
+            <h2 data-i18n-html="coreTitle">豪華さより、<br /><em>もう一回。</em></h2>
+            <p data-i18n="coreBody">
+              作るのは、ゲームのMVP。機能の数でも、画面の派手さでもない。「この操作が気持ちいい」「もう一度やりたい」と思える、ゲーム性の核を狙います。
+            </p>
+          </div>
+
+          <figure class="core-visual reveal">
+            <img
+              src="../../../assets/hag-mvp-image2.png"
+              alt="ゲームの面白さの核をプレイして確かめるイメージ"
+              data-i18n-alt="coreImageAlt"
+            />
+            <figcaption>
+              <span>WIN CONDITION</span>
+              <strong data-i18n="winCondition">人に遊ばせたくなるゲームを、動く形で出す。</strong>
+            </figcaption>
+          </figure>
+
+          <ol class="mission-list">
+            <li class="reveal">
+              <span class="mission-number">01</span>
+              <div>
+                <p>FORM A PARTY</p>
+                <h3 data-i18n="mission1Title">仲間を組む</h3>
+              </div>
+              <p data-i18n="mission1Body">2〜4人で制作。一人での申込は歓迎ですが、当日は必ずチームを組みます。</p>
+            </li>
+            <li class="reveal">
+              <span class="mission-number">02</span>
+              <div>
+                <p>FIND THE FUN</p>
+                <h3 data-i18n="mission2Title">面白さをひとつ決める</h3>
+              </div>
+              <p data-i18n="mission2Body">設定を広げる前に、プレイヤーが何をすると面白いのかを絞り込みます。</p>
+            </li>
+            <li class="reveal">
+              <span class="mission-number">03</span>
+              <div>
+                <p>BUILD WITH AI</p>
+                <h3 data-i18n="mission3Title">AIで一気に実装する</h3>
+              </div>
+              <p data-i18n="mission3Body">コード、画像、企画の壁打ちにAIを使い、まず遊べる状態まで持っていきます。</p>
+            </li>
+            <li class="reveal">
+              <span class="mission-number">04</span>
+              <div>
+                <p>PITCH & PLAY</p>
+                <h3 data-i18n="mission4Title">見せて、遊ばせる</h3>
+              </div>
+              <p data-i18n="mission4Body">狙った面白さを短く発表し、全員で実際にプレイして勝負します。</p>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="flow-section" id="flow">
+        <div class="section-shell">
+          <div class="flow-header reveal">
+            <div>
+              <p class="section-code dark-code">GAME FLOW / 10:00–21:30</p>
+              <h2 data-i18n-html="flowTitle">朝はアイデア。<br />夜にはゲーム。</h2>
+            </div>
+            <p data-i18n="flowBody">
+              制作時間を長く取りつつ、最後は発表して終わりではなく、全員が作品を触る試遊時間へ。時刻は最終調整で前後する場合があります。
+            </p>
+          </div>
+
+          <figure class="flow-visual reveal">
+            <img
+              src="../../../assets/hag-schedule-image2.png"
+              alt="制限時間の中でAIを使いゲームを完成させるイメージ"
+              data-i18n-alt="flowImageAlt"
+            />
+            <div class="flow-visual-tag"><span>TIME LIMIT</span><strong>1 DAY</strong></div>
+          </figure>
+
+          <ol class="timeline reveal">
+            <li><time>10:00</time><strong data-i18n="flow1">OPEN / チーム編成</strong></li>
+            <li><time>11:00</time><strong data-i18n="flow2">RULE BRIEFING</strong></li>
+            <li class="build"><time>11:30</time><strong data-i18n="flow3">BUILD START / 制作</strong></li>
+            <li><time>15:30</time><strong data-i18n="flow4">MVP CHECKPOINT</strong></li>
+            <li><time>17:00</time><strong>CODE FREEZE</strong></li>
+            <li class="battle"><time>17:15</time><strong data-i18n="flow6">PITCH / 作品発表</strong></li>
+            <li class="battle"><time>18:15</time><strong data-i18n="flow7">PLAYTEST / 試遊・審査</strong></li>
+            <li><time>19:15</time><strong data-i18n="flow8">SPONSOR LT / 集計</strong></li>
+            <li><time>19:45</time><strong data-i18n="flow9">AWARDS</strong></li>
+            <li><time>20:05</time><strong data-i18n="flow10">SOCIAL / 交流</strong></li>
+            <li><time>21:15</time><strong data-i18n="flow11">CLOSING</strong></li>
+            <li><time>21:30</time><strong data-i18n="flow12">EVENT CLOSE</strong></li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="join-section" id="guide">
+        <div class="join-visual reveal">
+          <img
+            src="../../../assets/hag-team-image2.png"
+            alt="チームでゲームを制作してプレイするイメージ"
+            data-i18n-alt="joinImageAlt"
+          />
+          <span>CO-OP MODE</span>
+        </div>
+        <div class="join-copy reveal">
+          <p class="section-code">PLAYER GUIDE</p>
+          <h2 data-i18n-html="joinTitle">一人で来ていい。<br /><em>一人では作らない。</em></h2>
+          <p data-i18n="joinBody">
+            友人との参加も、一人での申込も歓迎。当日は得意なことや作りたいゲームを話し、2〜4人のチームを組んで制作します。
+          </p>
+          <dl class="player-spec">
+            <div><dt>LEVEL</dt><dd data-i18n="levelValue">未経験〜経験者</dd></div>
+            <div><dt>GEAR</dt><dd data-i18n="gearValue">ノートPC・充電器</dd></div>
+            <div><dt>ENTRY</dt><dd data-i18n="entrySpecValue">一人申込OK / 制作はチーム必須</dd></div>
+            <div><dt>FEE</dt><dd data-i18n="feeSpecValue">無料</dd></div>
+          </dl>
+        </div>
+      </section>
+
+      <section class="university-band">
+        <div class="section-shell university-layout reveal">
+          <p class="section-code dark-code">VENUE PARTNER / PLANNED</p>
+          <h2 data-i18n-html="universityTitle">北海道大学との<br />共催を予定しています。</h2>
+          <div>
+            <p data-i18n="universityBody">
+              会場は北海道大学エンレイソウ1Fを予定。AIでアイデアを形にする実践と、札幌で次の制作仲間に出会う機会をつくります。
+            </p>
+            <small data-i18n="universityNote">※共催および会場は現在、正式決定に向けて調整中です。</small>
+          </div>
+        </div>
+      </section>
+
+      <section class="guide-section">
+        <div class="section-shell guide-layout">
+          <div class="guide-heading reveal">
+            <p class="section-code">BEFORE YOU JOIN</p>
+            <h2 data-i18n="guideTitle">参加前の確認</h2>
+          </div>
+          <div class="faq-list reveal">
+            <details>
+              <summary data-i18n="faq1Question">一人で申し込めますか？</summary>
+              <p data-i18n="faq1Answer">申し込めます。当日の制作は必ずチームで行い、事前チームがない方は会場で編成します。</p>
+            </details>
+            <details>
+              <summary data-i18n="faq2Question">ゲームを作ったことがなくても参加できますか？</summary>
+              <p data-i18n="faq2Answer">参加できます。ゲームを作りたい気持ちと、制作に使うノートPCを持ってきてください。</p>
+            </details>
+            <details>
+              <summary data-i18n="faq3Question">チームは何人ですか？</summary>
+              <p data-i18n="faq3Answer">2〜4人を予定しています。役割はプログラム、企画、ビジュアルなど、チーム内で自由に決めます。</p>
+            </details>
+            <details>
+              <summary data-i18n="faq4Question">スポンサー賞はありますか？</summary>
+              <p data-i18n="faq4Answer">スポンサー賞などの追加情報は、決定次第公式サイトとSNSで発表します。</p>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <section class="final-entry" id="entry">
+        <img
+          src="../../../assets/hag-partners-image2.png"
+          alt="完成したゲームを発表し、参加者と企業が交流するイメージ"
+          data-i18n-alt="finalImageAlt"
+        />
+        <div class="final-entry-copy reveal">
+          <p>READY?</p>
+          <h2 data-i18n-html="finalTitle">9月19日、<br />札幌でゲームを出そう。</h2>
+          <p data-i18n="finalBody">定員に達し次第、参加受付を締め切ります。</p>
+          <a
+            href="https://hagsapporo.connpass.com/event/402481/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span data-i18n="finalEntry">connpassで無料参加</span>
+            <b aria-hidden="true">→</b>
+          </a>
+        </div>
+      </section>
+
+      <section class="partner-contact">
+        <div class="section-shell partner-contact-layout">
+          <div>
+            <p class="section-code dark-code">SPONSOR / PARTNER</p>
+            <h2 data-i18n="partnerTitle">協賛・連携企業を募集しています。</h2>
+          </div>
+          <p data-i18n="partnerBody">LT、審査、技術支援、スポンサー賞など、目的に合わせて連携内容をご相談します。</p>
+          <a href="mailto:hag.sapporo28@gmail.com?subject=HAG%E5%8D%94%E8%B3%9B%E3%83%BB%E9%80%A3%E6%90%BA%E3%81%AE%E3%81%94%E7%9B%B8%E8%AB%87" data-i18n="partnerButton">CONTACT →</a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-brand"><strong>HAG</strong><span>HOKKAIDO AI GAMEDEV</span></div>
+      <div class="footer-links">
+        <a href="../" data-i18n="originalLp">ORIGINAL LP</a>
+        <a href="./flyer.html" target="_blank" rel="noopener" data-i18n="flyerLink">FLYER</a>
+        <a href="mailto:hag.sapporo28@gmail.com">hag.sapporo28@gmail.com</a>
+      </div>
+      <small>© <span data-current-year>2026</span> HAG</small>
+    </footer>
+
+    <aside class="sticky-entry" aria-label="Registration">
+      <div><strong>2026.09.19</strong><span data-i18n="stickyVenue">札幌・北海道大学</span></div>
+      <a
+        href="https://hagsapporo.connpass.com/event/402481/"
+        target="_blank"
+        rel="noopener noreferrer"
+        data-i18n="stickyEntry"
+      >
+        無料参加 →
+      </a>
+    </aside>
+  </body>
+</html>
