@@ -1,14 +1,14 @@
 :root {
-  --ink: #0c0e10;
-  --ink-soft: #191d21;
-  --paper: #f4f0e7;
+  --ink: #07080a;
+  --ink-soft: #111318;
+  --paper: #eeeae1;
   --white: #fffdf5;
-  --blue: #78c6eb;
-  --yellow: #ffd21f;
-  --orange: #ff5a22;
-  --green: #6df27c;
-  --line-dark: rgba(12, 14, 16, 0.28);
-  --line-light: rgba(255, 253, 245, 0.24);
+  --blue: #25d7ff;
+  --yellow: #eaff2f;
+  --orange: #ff2a18;
+  --green: #fffdf5;
+  --line-dark: rgba(7, 8, 10, 0.3);
+  --line-light: rgba(255, 253, 245, 0.22);
   --page: 1240px;
   --header-height: 76px;
 }
@@ -94,7 +94,7 @@ button {
 }
 
 .brand strong {
-  color: var(--yellow);
+  color: var(--orange);
   font-family: "Cascadia Mono", "Consolas", monospace;
   font-size: 30px;
   line-height: 1;
@@ -169,8 +169,8 @@ button {
   place-items: center;
   min-width: 126px;
   padding: 0 22px;
-  color: var(--ink);
-  background: var(--yellow);
+  color: var(--white);
+  background: var(--orange);
   font-family: "Cascadia Mono", "Consolas", monospace;
   font-size: 13px;
   font-weight: 900;
@@ -179,7 +179,8 @@ button {
 
 .header-entry:hover,
 .header-entry:focus-visible {
-  background: var(--green);
+  color: var(--ink);
+  background: var(--blue);
 }
 
 .hero {
@@ -188,8 +189,30 @@ button {
   min-height: 660px;
   max-height: 840px;
   overflow: hidden;
-  color: var(--ink);
-  background: var(--blue);
+  color: var(--white);
+  background: var(--ink);
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0 auto 0 0;
+  z-index: 1;
+  width: 57%;
+  background: rgba(7, 8, 10, 0.28);
+  clip-path: polygon(0 0, 100% 0, 79% 100%, 0 100%);
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  left: -5%;
+  bottom: -112px;
+  z-index: 1;
+  width: 46%;
+  height: 160px;
+  background: var(--orange);
+  transform: rotate(-5deg);
 }
 
 .hero-art {
@@ -199,6 +222,7 @@ button {
   height: 100%;
   object-fit: cover;
   object-position: center center;
+  filter: saturate(1.08) contrast(1.04);
   animation: hero-drift 12s ease-in-out infinite alternate;
 }
 
@@ -237,7 +261,7 @@ button {
 }
 
 .hero-flags .hero-location {
-  color: var(--ink);
+  color: var(--white);
   background: var(--orange);
 }
 
@@ -249,8 +273,9 @@ button {
   max-width: 100%;
   margin: 0 0 18px;
   padding: 8px 11px;
-  border: 2px solid var(--ink);
-  background: var(--yellow);
+  border: 2px solid var(--white);
+  color: var(--white);
+  background: rgba(7, 8, 10, 0.74);
   font-size: 13px;
   font-weight: 800;
 }
@@ -264,7 +289,7 @@ button {
 }
 
 .status-light.dark {
-  background: var(--ink);
+  background: var(--white);
 }
 
 .hero h1 {
@@ -273,6 +298,10 @@ button {
   font-size: 76px;
   font-weight: 900;
   line-height: 1.04;
+}
+
+.hero-title-ja span:nth-child(2) {
+  color: var(--orange);
 }
 
 .hero-title-ja,
@@ -302,6 +331,7 @@ html[lang="en"] .hero-title-en {
   font-size: 17px;
   font-weight: 700;
   line-height: 1.8;
+  color: rgba(255, 253, 245, 0.86);
 }
 
 .hero-actions {
@@ -318,9 +348,9 @@ html[lang="en"] .hero-title-en {
   width: 245px;
   min-height: 52px;
   padding: 0 16px 0 18px;
-  border: 2px solid var(--ink);
+  border: 2px solid var(--white);
   color: var(--white);
-  background: var(--ink);
+  background: var(--orange);
   font-size: 14px;
   font-weight: 900;
   box-shadow: 7px 7px 0 var(--yellow);
@@ -340,7 +370,7 @@ html[lang="en"] .hero-title-en {
 
 .text-command {
   padding: 9px 0 6px;
-  border-bottom: 3px solid var(--ink);
+  border-bottom: 3px solid var(--white);
   font-size: 13px;
   font-weight: 900;
 }
@@ -350,7 +380,7 @@ html[lang="en"] .hero-title-en {
   grid-template-columns: 1fr 1.6fr 0.8fr 0.9fr;
   width: 100%;
   margin: auto 0 0;
-  border: 2px solid var(--ink);
+  border: 2px solid var(--orange);
   color: var(--white);
   background: var(--ink);
 }
@@ -391,8 +421,8 @@ html[lang="en"] .hero-title-en {
   justify-content: space-between;
   min-height: 112px;
   padding: 18px max(24px, calc((100% - var(--page)) / 2));
-  color: var(--ink);
-  background: var(--yellow);
+  color: var(--white);
+  background: var(--orange);
   border-top: 2px solid var(--ink);
   border-bottom: 2px solid var(--ink);
 }
@@ -512,7 +542,7 @@ html[lang="en"] .hero-title-en {
 
 .section-heading h2 em,
 .join-copy h2 em {
-  color: var(--yellow);
+  color: var(--orange);
   font-style: normal;
 }
 
@@ -531,13 +561,15 @@ html[lang="en"] .hero-title-en {
   height: 520px;
   margin: 0;
   overflow: hidden;
-  border: 1px solid var(--line-light);
+  border: 2px solid var(--orange);
 }
 
 .core-visual img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center 67%;
+  filter: saturate(1.04) contrast(1.05);
 }
 
 .core-visual figcaption {
@@ -549,8 +581,9 @@ html[lang="en"] .hero-title-en {
   gap: 7px;
   width: min(520px, 48%);
   padding: 18px 22px;
-  color: var(--ink);
-  background: var(--yellow);
+  color: var(--white);
+  background: var(--orange);
+  clip-path: polygon(5% 0, 100% 0, 100% 100%, 0 100%);
 }
 
 .core-visual figcaption span {
@@ -609,9 +642,27 @@ html[lang="en"] .hero-title-en {
 }
 
 .flow-section {
+  position: relative;
+  overflow: hidden;
   padding: 106px 0 120px;
   color: var(--ink);
-  background: var(--yellow);
+  background: var(--paper);
+}
+
+.flow-section::before {
+  content: "";
+  position: absolute;
+  top: -95px;
+  right: -8%;
+  width: 42%;
+  height: 210px;
+  background: var(--orange);
+  transform: rotate(8deg);
+}
+
+.flow-section .section-shell {
+  position: relative;
+  z-index: 1;
 }
 
 .flow-header {
@@ -634,7 +685,7 @@ html[lang="en"] .hero-title-en {
   height: 450px;
   margin: 56px 0 0;
   overflow: hidden;
-  border: 2px solid var(--ink);
+  border: 2px solid var(--orange);
   background: var(--ink);
 }
 
@@ -642,6 +693,8 @@ html[lang="en"] .hero-title-en {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center;
+  filter: saturate(1.06) contrast(1.05);
 }
 
 .flow-visual-tag {
@@ -653,11 +706,11 @@ html[lang="en"] .hero-title-en {
   min-width: 150px;
   padding: 12px 14px;
   color: var(--white);
-  background: var(--ink);
+  background: var(--orange);
 }
 
 .flow-visual-tag span {
-  color: var(--yellow);
+  color: var(--white);
   font-family: "Cascadia Mono", "Consolas", monospace;
   font-size: 9px;
   font-weight: 900;
@@ -715,7 +768,7 @@ html[lang="en"] .hero-title-en {
   grid-template-columns: 1.08fr 0.92fr;
   min-height: 680px;
   color: var(--white);
-  background: var(--ink-soft);
+  background: var(--ink);
 }
 
 .join-visual {
@@ -728,6 +781,8 @@ html[lang="en"] .hero-title-en {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center 72%;
+  filter: saturate(1.04) contrast(1.05);
 }
 
 .join-visual > span {
@@ -735,8 +790,8 @@ html[lang="en"] .hero-title-en {
   top: 22px;
   left: 22px;
   padding: 10px 12px;
-  color: var(--ink);
-  background: var(--green);
+  color: var(--white);
+  background: var(--orange);
   font-family: "Cascadia Mono", "Consolas", monospace;
   font-size: 11px;
   font-weight: 900;
@@ -792,8 +847,8 @@ html[lang="en"] .hero-title-en {
 
 .university-band {
   padding: 92px 0;
-  color: var(--ink);
-  background: var(--blue);
+  color: var(--white);
+  background: var(--orange);
   border-top: 2px solid var(--ink);
   border-bottom: 2px solid var(--ink);
 }
@@ -803,6 +858,10 @@ html[lang="en"] .hero-title-en {
   grid-template-columns: 0.48fr 1.35fr 1fr;
   gap: 44px;
   align-items: start;
+}
+
+.university-band .dark-code {
+  color: var(--ink);
 }
 
 .university-layout h2 {
@@ -900,6 +959,7 @@ html[lang="en"] .hero-title-en {
   height: 100%;
   object-fit: cover;
   object-position: center;
+  filter: saturate(1.08) contrast(1.05);
 }
 
 .final-entry::after {
@@ -907,7 +967,8 @@ html[lang="en"] .hero-title-en {
   position: absolute;
   inset: 0 auto 0 0;
   width: 53%;
-  background: rgba(12, 14, 16, 0.94);
+  background: rgba(7, 8, 10, 0.9);
+  clip-path: polygon(0 0, 100% 0, 84% 100%, 0 100%);
 }
 
 .final-entry-copy {
@@ -946,8 +1007,8 @@ html[lang="en"] .hero-title-en {
   min-height: 62px;
   margin-top: 34px;
   padding: 0 18px 0 20px;
-  color: var(--ink);
-  background: var(--yellow);
+  color: var(--white);
+  background: var(--orange);
   font-size: 15px;
   font-weight: 900;
   transition: background 160ms ease;
@@ -955,7 +1016,8 @@ html[lang="en"] .hero-title-en {
 
 .final-entry-copy > a:hover,
 .final-entry-copy > a:focus-visible {
-  background: var(--green);
+  color: var(--ink);
+  background: var(--blue);
 }
 
 .final-entry-copy > a b {
@@ -966,7 +1028,7 @@ html[lang="en"] .hero-title-en {
 .partner-contact {
   padding: 70px 0;
   color: var(--ink);
-  background: var(--orange);
+  background: var(--blue);
   border-top: 2px solid var(--ink);
   border-bottom: 2px solid var(--ink);
 }
@@ -1023,7 +1085,7 @@ footer {
 }
 
 .footer-brand strong {
-  color: var(--yellow);
+  color: var(--orange);
   font-family: "Cascadia Mono", "Consolas", monospace;
   font-size: 24px;
 }
@@ -1043,7 +1105,7 @@ footer small {
 
 .footer-links a:hover,
 .footer-links a:focus-visible {
-  color: var(--yellow);
+  color: var(--blue);
 }
 
 .sticky-entry {
@@ -1057,7 +1119,7 @@ footer small {
   min-height: 66px;
   color: var(--white);
   background: var(--ink);
-  border-top: 2px solid var(--yellow);
+  border-top: 2px solid var(--orange);
 }
 
 .sticky-entry > div,
@@ -1073,7 +1135,7 @@ footer small {
 }
 
 .sticky-entry strong {
-  color: var(--yellow);
+  color: var(--orange);
   font-family: "Cascadia Mono", "Consolas", monospace;
   font-size: 14px;
 }
@@ -1086,8 +1148,8 @@ footer small {
 .sticky-entry > a {
   justify-content: center;
   width: 220px;
-  color: var(--ink);
-  background: var(--yellow);
+  color: var(--white);
+  background: var(--orange);
   font-size: 14px;
   font-weight: 900;
 }
@@ -1225,7 +1287,9 @@ footer small {
     position: absolute;
     inset: 0;
     z-index: 1;
-    background: rgba(120, 198, 235, 0.46);
+    width: auto;
+    background: rgba(7, 8, 10, 0.48);
+    clip-path: none;
   }
 
   .hero-art {
@@ -1545,11 +1609,11 @@ footer small {
   }
 
   .core-visual img {
-    object-position: center;
+    object-position: center 65%;
   }
 
   .flow-visual img {
-    object-position: 45% center;
+    object-position: 63% center;
   }
 
   .flow-visual-tag {

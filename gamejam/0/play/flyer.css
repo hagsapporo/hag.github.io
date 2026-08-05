@@ -16,7 +16,7 @@ body {
   min-height: 1350px;
   margin: 0;
   color: #fffdf5;
-  background: #0c0e10;
+  background: #07080a;
   font-family: "Yu Gothic", "Hiragino Kaku Gothic ProN", "Meiryo", Arial, sans-serif;
   letter-spacing: 0;
 }
@@ -31,18 +31,62 @@ body {
   width: 1080px;
   height: 1350px;
   overflow: hidden;
-  background: #0c0e10;
+  background: #07080a;
+}
+
+.poster::before {
+  content: "";
+  position: absolute;
+  top: 42px;
+  left: 0;
+  z-index: 2;
+  width: 94%;
+  height: 655px;
+  background: rgba(7, 8, 10, 0.94);
+  clip-path: polygon(0 0, 100% 0, 76% 88%, 0 100%);
+}
+
+.poster::after {
+  content: "";
+  position: absolute;
+  right: -120px;
+  bottom: 194px;
+  z-index: 2;
+  width: 600px;
+  height: 46px;
+  background: #ff2a18;
+  transform: rotate(-8deg);
+}
+
+.poster-art {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  filter: saturate(1.08) contrast(1.05);
+}
+
+.poster-veil {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: rgba(7, 8, 10, 0.12);
 }
 
 .top-rail {
+  position: relative;
+  z-index: 4;
   display: grid;
   grid-template-columns: 1fr 1fr 0.7fr;
   align-items: center;
   height: 44px;
   padding: 0 52px;
-  color: #0c0e10;
-  background: #ffd21f;
-  border-bottom: 3px solid #0c0e10;
+  color: #fffdf5;
+  background: #ff2a18;
+  border-bottom: 3px solid #07080a;
   font-family: "Cascadia Mono", "Consolas", monospace;
   font-size: 16px;
   font-weight: 900;
@@ -57,12 +101,14 @@ body {
 }
 
 .poster-header {
+  position: relative;
+  z-index: 4;
   display: flex;
   align-items: center;
   justify-content: space-between;
   height: 92px;
   padding: 0 54px;
-  border-bottom: 2px solid rgba(255, 253, 245, 0.26);
+  border-bottom: 2px solid rgba(255, 253, 245, 0.3);
 }
 
 .poster-brand {
@@ -72,7 +118,7 @@ body {
 }
 
 .poster-brand strong {
-  color: #78c6eb;
+  color: #ff2a18;
   font-family: "Cascadia Mono", "Consolas", monospace;
   font-size: 44px;
 }
@@ -89,7 +135,9 @@ body {
   gap: 11px;
   margin: 0;
   padding: 11px 14px;
-  border: 2px solid #ffd21f;
+  border: 2px solid #fffdf5;
+  color: #fffdf5;
+  background: rgba(7, 8, 10, 0.74);
   font-size: 17px;
   font-weight: 900;
 }
@@ -97,17 +145,19 @@ body {
 .poster-header i {
   width: 11px;
   height: 11px;
-  background: #ff5a22;
+  background: #ff2a18;
 }
 
 .poster-copy {
-  height: 468px;
-  padding: 48px 54px 34px;
+  position: relative;
+  z-index: 4;
+  width: 800px;
+  padding: 48px 0 0 54px;
 }
 
 .stage-label {
-  margin: 0 0 22px;
-  color: #6df27c;
+  margin: 0 0 20px;
+  color: #25d7ff;
   font-family: "Cascadia Mono", "Consolas", monospace;
   font-size: 18px;
   font-weight: 900;
@@ -115,9 +165,9 @@ body {
 
 .poster-copy h1 {
   margin: 0;
-  font-size: 104px;
+  font-size: 101px;
   font-weight: 900;
-  line-height: 1.09;
+  line-height: 1.08;
 }
 
 .poster-copy h1 span {
@@ -125,27 +175,92 @@ body {
   white-space: nowrap;
 }
 
+.poster-copy h1 span:last-child {
+  color: #ff2a18;
+}
+
 .poster-lead {
-  margin: 26px 0 0;
-  color: rgba(255, 253, 245, 0.82);
-  font-size: 25px;
+  margin: 25px 0 0;
+  color: rgba(255, 253, 245, 0.84);
+  font-size: 24px;
   font-weight: 700;
   line-height: 1.65;
 }
 
+.date-lockup {
+  display: flex;
+  align-items: baseline;
+  gap: 18px;
+  width: max-content;
+  margin-top: 27px;
+  padding: 10px 15px;
+  color: #07080a;
+  background: #eaff2f;
+  transform: rotate(-1.5deg);
+}
+
+.date-lockup b,
+.date-lockup span {
+  font-family: "Cascadia Mono", "Consolas", monospace;
+  font-weight: 900;
+}
+
+.date-lockup b {
+  font-size: 28px;
+}
+
+.date-lockup span {
+  font-size: 14px;
+}
+
+.mission-stamp {
+  position: absolute;
+  top: 820px;
+  left: 42px;
+  z-index: 4;
+  min-width: 300px;
+  padding: 15px 18px 17px;
+  color: #07080a;
+  background: #eaff2f;
+  border: 3px solid #07080a;
+  transform: rotate(-2.5deg);
+}
+
+.mission-stamp span {
+  display: block;
+  margin-bottom: 5px;
+  font-family: "Cascadia Mono", "Consolas", monospace;
+  font-size: 13px;
+  font-weight: 900;
+}
+
+.mission-stamp strong {
+  font-family: "Arial Black", Arial, sans-serif;
+  font-size: 29px;
+  line-height: 1.12;
+}
+
 .poster-data {
+  position: absolute;
+  right: 0;
+  bottom: 84px;
+  left: 0;
+  z-index: 5;
   display: grid;
-  grid-template-columns: 1.35fr 1.3fr 1fr 0.72fr;
+  grid-template-columns: 1.45fr 1.05fr 0.52fr;
   height: 128px;
   margin: 0;
-  border-top: 3px solid #ffd21f;
-  border-bottom: 3px solid #ffd21f;
-  background: #191d21;
+  border-top: 3px solid #ff2a18;
+  border-bottom: 3px solid #ff2a18;
+  background: rgba(7, 8, 10, 0.96);
 }
 
 .poster-data > div {
-  padding: 18px 20px;
-  border-right: 2px solid rgba(255, 253, 245, 0.25);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 16px 20px;
+  border-right: 2px solid rgba(255, 253, 245, 0.3);
 }
 
 .poster-data > div:last-child {
@@ -154,7 +269,7 @@ body {
 
 .poster-data dt {
   margin-bottom: 8px;
-  color: #78c6eb;
+  color: #25d7ff;
   font-family: "Cascadia Mono", "Consolas", monospace;
   font-size: 13px;
   font-weight: 900;
@@ -167,62 +282,17 @@ body {
   line-height: 1.35;
 }
 
-.poster-data small {
-  font-family: "Cascadia Mono", "Consolas", monospace;
-  font-size: 13px;
-}
-
 .poster-data .free {
-  color: #0c0e10;
-  background: #ff5a22;
+  color: #fffdf5;
+  background: #ff2a18;
 }
 
 .poster-data .free dt {
-  color: #0c0e10;
+  color: #07080a;
 }
 
 .poster-data .free dd {
-  font-size: 43px;
-}
-
-.poster-visual {
-  position: relative;
-  height: 534px;
-  margin: 0;
-  overflow: hidden;
-  background: #0c0e10;
-}
-
-.poster-visual img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-}
-
-.poster-visual figcaption {
-  position: absolute;
-  top: 24px;
-  left: 26px;
-  min-width: 300px;
-  padding: 16px 18px;
-  color: #0c0e10;
-  background: #ffd21f;
-  border: 3px solid #0c0e10;
-}
-
-.poster-visual figcaption span {
-  display: block;
-  margin-bottom: 5px;
-  font-family: "Cascadia Mono", "Consolas", monospace;
-  font-size: 13px;
-  font-weight: 900;
-}
-
-.poster-visual figcaption strong {
-  font-family: "Arial Black", Arial, sans-serif;
-  font-size: 29px;
-  line-height: 1.12;
+  font-size: 42px;
 }
 
 .poster-footer {
@@ -230,14 +300,15 @@ body {
   right: 0;
   bottom: 0;
   left: 0;
+  z-index: 6;
   display: flex;
   align-items: center;
   justify-content: space-between;
   height: 84px;
   padding: 0 54px;
-  color: #0c0e10;
-  background: #78c6eb;
-  border-top: 3px solid #0c0e10;
+  color: #07080a;
+  background: #25d7ff;
+  border-top: 3px solid #07080a;
 }
 
 .poster-footer > div {

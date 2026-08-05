@@ -23,7 +23,7 @@ const copy = {
     coreTitle: "豪華さより、<br /><em>もう一回。</em>",
     coreBody:
       "作るのは、ゲームのMVP。機能の数でも、画面の派手さでもない。「この操作が気持ちいい」「もう一度やりたい」と思える、ゲーム性の核を狙います。",
-    coreImageAlt: "ゲームの面白さの核をプレイして確かめるイメージ",
+    coreImageAlt: "ゲーム制作に集中するクリエイターチーム",
     winCondition: "人に遊ばせたくなるゲームを、動く形で出す。",
     mission1Title: "仲間を組む",
     mission1Body: "2〜4人で制作。一人での申込は歓迎ですが、当日は必ずチームを組みます。",
@@ -36,7 +36,7 @@ const copy = {
     flowTitle: "朝はアイデア。<br />夜にはゲーム。",
     flowBody:
       "制作時間を長く取りつつ、最後は発表して終わりではなく、全員が作品を触る試遊時間へ。時刻は最終調整で前後する場合があります。",
-    flowImageAlt: "制限時間の中でAIを使いゲームを完成させるイメージ",
+    flowImageAlt: "制限時間の中でゲームを完成させるクリエイターチーム",
     flow1: "OPEN / チーム編成",
     flow2: "RULE BRIEFING",
     flow3: "BUILD START / 制作",
@@ -48,7 +48,7 @@ const copy = {
     flow10: "SOCIAL / 交流",
     flow11: "CLOSING",
     flow12: "EVENT CLOSE",
-    joinImageAlt: "チームでゲームを制作してプレイするイメージ",
+    joinImageAlt: "ゲーム制作に挑むクリエイターチーム",
     joinTitle: "一人で来ていい。<br /><em>一人では作らない。</em>",
     joinBody:
       "友人との参加も、一人での申込も歓迎。当日は得意なことや作りたいゲームを話し、2〜4人のチームを組んで制作します。",
@@ -69,7 +69,7 @@ const copy = {
     faq3Answer: "2〜4人を予定しています。役割はプログラム、企画、ビジュアルなど、チーム内で自由に決めます。",
     faq4Question: "スポンサー賞はありますか？",
     faq4Answer: "スポンサー賞などの追加情報は、決定次第公式サイトとSNSで発表します。",
-    finalImageAlt: "完成したゲームを発表し、参加者と企業が交流するイメージ",
+    finalImageAlt: "完成したゲームを試遊して盛り上がるイベント会場",
     finalTitle: "9月19日、<br />札幌でゲームを出そう。",
     finalBody: "定員に達し次第、参加受付を締め切ります。",
     finalEntry: "connpassで無料参加",
@@ -105,7 +105,7 @@ const copy = {
     coreTitle: "Not more polish.<br /><em>One more play.</em>",
     coreBody:
       "Build a game MVP. Not the most features or the flashiest screen, but the core mechanic that makes someone say, “That felt good. Again.”",
-    coreImageAlt: "Players testing the core fun of a game",
+    coreImageAlt: "A game creation team focused on a playable build",
     winCondition: "Ship a playable game you cannot wait to put in someone else's hands.",
     mission1Title: "Form a party",
     mission1Body: "Build in teams of 2–4. Solo applications are welcome, but everyone joins a team on the day.",
@@ -118,7 +118,7 @@ const copy = {
     flowTitle: "An idea at dawn.<br />A game by night.",
     flowBody:
       "Most of the day is for building. The finale is not just a presentation: everyone gets hands-on time with the games. Times may shift slightly in the final program.",
-    flowImageAlt: "Building a game with AI against a one-day time limit",
+    flowImageAlt: "Creators racing to finish a game against a one-day time limit",
     flow1: "OPEN / TEAM UP",
     flow2: "RULE BRIEFING",
     flow3: "BUILD START",
@@ -130,7 +130,7 @@ const copy = {
     flow10: "SOCIAL",
     flow11: "CLOSING",
     flow12: "EVENT CLOSE",
-    joinImageAlt: "A team building and playing a game together",
+    joinImageAlt: "A focused team creating a game together",
     joinTitle: "Come solo.<br /><em>Do not build solo.</em>",
     joinBody:
       "Join with friends or apply on your own. On the day, share what you enjoy and what you want to make, then form a team of 2–4.",
@@ -151,7 +151,7 @@ const copy = {
     faq3Answer: "Teams are planned for 2–4 people. Programming, planning, visuals, and other roles are decided within each team.",
     faq4Question: "Will there be sponsor awards?",
     faq4Answer: "Sponsor awards and other additions will be announced on the official website and social channels once confirmed.",
-    finalImageAlt: "Participants and partners gathering around a finished game",
+    finalImageAlt: "A high-energy playtest finale at a game creation event",
     finalTitle: "Ship a game<br />in Sapporo on Sep. 19.",
     finalBody: "Registration closes when capacity is reached.",
     finalEntry: "Join free on connpass",
